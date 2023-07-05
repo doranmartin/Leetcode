@@ -1,13 +1,8 @@
-steps = 0
+ransomNote = 'aa'
+magazine = 'ab'
 
-num = int(14)
-
-while num != 0:
-    if num % 2 == 0:
-        num /= 2
-    else:
-        num -= 1
-
-    steps += 1
-    
-print(steps)
+for char in ransomNote:
+    if magazine.find(char) == -1:
+        print(false)
+    magazine = magazine.replace(char, '', 1)
+    print(ransomNote, magazine)
