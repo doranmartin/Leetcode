@@ -1,13 +1,13 @@
-accounts = [(0, 1, 3), (3, 4, 5)]
+steps = 0
 
-max, curr = (0,0)
-print(max, curr)
+num = int(14)
 
-for m, list in enumerate(accounts):
-            if curr > max:
-                max = curr
-            curr = 0
+while num != 0:
+    if num % 2 == 0:
+        num /= 2
+    else:
+        num -= 1
 
-            print(m)
-            # for value, n in enumerate(accounts[m]):
-            #     curr += value
+    steps += 1
+    
+print(steps)
