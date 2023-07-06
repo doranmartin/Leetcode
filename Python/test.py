@@ -1,8 +1,10 @@
-ransomNote = 'aa'
-magazine = 'ab'
+import typing
 
-for char in ransomNote:
-    if magazine.find(char) == -1:
-        print(false)
-    magazine = magazine.replace(char, '', 1)
-    print(ransomNote, magazine)
+map = {}
+nums = [2, 7, 11, 15]
+target = 9
+
+for index, element in enumerate(nums):
+    if element in map:
+        print([map[element], index])
+    map[target - element] = index
