@@ -4,7 +4,9 @@ class Solution:
         end = len(x) - 1
         for index, digit in enumerate(x):
             if end == index:
-                return True
+                break
             elif x[index] != x[end]:
                 return False
             end -= 1
+
+        return True
