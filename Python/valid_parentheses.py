@@ -9,11 +9,11 @@ class Solution:
             '[': ']'
         }
 
-        for i in range(0, len(s) - 1, 2):
-            if map[s[i]] == s[i + 1]:
-                continue
-            else:
+        stack = []
+        for char in s:
+            if char in map:
+                stack.append(map[char])
+            elif len(stack) == 0 or char != stack.pop():
                 return False
-            
-        return True
-    
+        
+        return len(stack) == 0
