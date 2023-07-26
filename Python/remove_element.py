@@ -22,4 +22,3 @@ if ith == val -> continue
 if kth != val -> k++
 else kth == val and ith != val -> swap their values
 '''
-
