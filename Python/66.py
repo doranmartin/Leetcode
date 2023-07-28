@@ -11,7 +11,6 @@ class Solution:
             digits[i] = 0
             i -= 1
         
-
         if i < 0:
             new = [1]
             for elements in digits:
