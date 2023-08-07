@@ -32,5 +32,8 @@ class Solution:
     increment by 1 and square that number
 
     if it is greater than x, return that number - 1
+
+    revision:
+    use binary search
     
     '''
