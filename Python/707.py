@@ -77,6 +77,7 @@ class MyLinkedList:
 
 
     def deleteAtIndex(self, index: int) -> None:
+        if index > self.size
         
 
 
